@@ -6,14 +6,14 @@ print("Отсортируйте по убыванию методом пузыр�
 
 def sort(array, k):
     n = 1
-    while n == 1:
-        n = 0
+    while n == True:
+        n = False
         for i in range(len(array) - 1):
             if array[i] < array[i + 1]:
                 if k == 1:
                     print("Меняем местами:", array[i], array[i + 1])
                 array[i], array[i + 1] = array[i + 1], array[i]
-                n = 1
+                n = True
                 if k == 1:
                     print(array)
     return array
