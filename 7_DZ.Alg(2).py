@@ -50,7 +50,9 @@ def connect_sort(nums):
 SIZE = 5
 MIN = 0
 MAX = 49
-array = [random.randint(MIN, MAX) for _ in range(SIZE)]
-print("Исходный список\n", array)
-array = connect_sort(array)
-print("Отсортированный список:\n", array)
+a = [0] * SIZE
+for i in range(SIZE):
+   a[i] = float(random.randint(MIN, MAX))
+print("Исходный список\n", a)
+a = connect_sort(a)
+print("Отсортированный список:\n", a)
